@@ -4,9 +4,7 @@ const string = 'Are we not drawn onward, we few, drawn onward to new era?';
 
 function isStrPalindrome(string) {
     const normalizedStr = string.toLowerCase().replace(/[^a-z0-9]/g, '');
-    console.log(normalizedStr);
     const reversedStr = normalizedStr.split('').reverse().join('');
-    console.log(reversedStr);
     return normalizedStr === reversedStr;
 }
 
