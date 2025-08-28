@@ -8,4 +8,6 @@ function isStrPalindrome(string) {
     return normalizedStr === reversedStr;
 }
 
-console.log(isStrPalindrome(string));
+isStrPalindrome(string)
+    ? console.log(`'${string}': is palindrome`)
+    : console.log(`'${string}': is not palindrome`);
