@@ -1,17 +1,15 @@
 'use strict';
 
-const targetStr = 'Some men interpret nine memos';
+const string = 'Some men interpret nine memos';
 const separator = '';
 
 function isStrPalindrome(string, separator) {
-    const targetStrWithoutSpaces = string
-        .toLowerCase()
-        .replaceAll(' ', separator);
-    const targetStrWithoutSpacesReversed = targetStrWithoutSpaces
+    const stringWithoutSpaces = string.toLowerCase().replaceAll(' ', separator);
+    const stringWithoutSpacesReversed = stringWithoutSpaces
         .split(separator)
         .reverse()
         .join(separator);
-    return targetStrWithoutSpaces === targetStrWithoutSpacesReversed;
+    return stringWithoutSpaces === stringWithoutSpacesReversed;
 }
 
-console.log(isStrPalindrome(targetStr, separator));
+console.log(isStrPalindrome(string, separator));
