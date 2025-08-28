@@ -1,6 +1,6 @@
 'use strict';
 
-const string = 'Cigar? Toss it in a can. It is so tragic.';
+const string = 'Are we not drawn onward, we few, drawn onward to new era?';
 
 function isStrPalindrome(string) {
     const normalizedStr = string.toLowerCase().replace(/[^a-z0-9]/g, '');
