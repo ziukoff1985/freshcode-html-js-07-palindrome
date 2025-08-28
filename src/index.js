@@ -1,15 +1,11 @@
 'use strict';
 
-const string = 'A man, a plan, a canal: Panama';
+const string = 'Cigar? Toss it in a can. It is so tragic.';
 
 function isStrPalindrome(string) {
-    const separator = '';
     const normalizedStr = string.toLowerCase().replace(/[^a-z0-9]/g, '');
     console.log(normalizedStr);
-    const reversedStr = normalizedStr
-        .split(separator)
-        .reverse()
-        .join(separator);
+    const reversedStr = normalizedStr.split('').reverse().join('');
     console.log(reversedStr);
     return normalizedStr === reversedStr;
 }
